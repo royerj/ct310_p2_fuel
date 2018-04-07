@@ -40,10 +40,10 @@
             <li <?=checkIfActive("about"); ?> ><a href="<?=Uri::Create("index.php/travelco/about"); ?>">About Us</a></li>
             <?php
               if(Auth::check()) {
-                  echo "<li><a href=" . Uri::create("index.php/travelco/logout/") . ">Logout</a></li>";
                   echo "<li ";
                   echo checkIfActive("account");
                   echo "><a href=" . Uri::create("index.php/travelco/account/") . ">My Account</a></li>";
+                  echo "<li><a href=" . Uri::create("index.php/travelco/logout/") . ">Logout</a></li>";
               } else {
                   echo "<li ";
                   echo checkIfActive("login");
