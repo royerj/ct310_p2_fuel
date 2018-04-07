@@ -149,8 +149,7 @@ class Controller_TravelCo extends Controller {
     * admin = 10
     * customer = 1
     */
-    public function createUsers()
-    {
+    public function createUsers() {
         Auth::create_user('aaronper', '449a36b6689d841d7d27f31b4b7cc73a', 'aaronper@cs.colostate.edu', 1, array());
         Auth::create_user('aaronperadmin', 'd31bfd85d0a81046f70304ebfecdffbf', 'Aaron.Pereira@colostate.edu     ', 10, array());
         Auth::create_user('bsay', '790f6b6cf6a6fbead525927d69f409fe', 'bsay@cs.colostate.edu    ', 1, array());

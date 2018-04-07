@@ -29,8 +29,8 @@
             <li <?=checkIfActive("index"); ?> ><a href="<?=Uri::Create("index.php/travelco/index"); ?>">Home</a></li>
             <li <?=checkIfActive("attractions"); ?> ><a href="<?=Uri::Create("index.php/travelco/attractions"); ?>">Attractions</a></li>
             <?php
-              if(Auth::check()){
-                if(Auth::get('group') === '10'){
+              if(Auth::check()) {
+                if(Auth::get('group') === '10') {
                   echo "<li ";
                   echo checkIfActive("add_attraction");
                   echo "><a href=" . Uri::create("index.php/travelco/add_attraction/") . ">+ Add New Attraction</a></li>";
@@ -39,7 +39,7 @@
             ?>
             <li <?=checkIfActive("about"); ?> ><a href="<?=Uri::Create("index.php/travelco/about"); ?>">About Us</a></li>
             <?php
-              if(Auth::check()){
+              if(Auth::check()) {
                   echo "<li><a href=" . Uri::create("index.php/travelco/logout/") . ">Logout</a></li>";
                   echo "<li ";
                   echo checkIfActive("account");
@@ -63,19 +63,21 @@
   <footer class="footer dark-opac-bg">
       <div class="container-fluid">
         <center>
+          <?php
+            $usr = Auth::get('username');
+            if ($usr != 'guest') {
+              $time = Auth::get('updated_at');
+              echo "Logged in as: ";
+              echo $usr;
+              echo " | Logged in since: " . date('D M j h:i:s a',$time);
+            } else {
+              echo "Not logged in.";
+            }
+          ?>
           <p>
             Authors: Isaac Hall and Jacob Royer | Contact: <a href="mailto:isaac.hall@colostate.edu">isaac.hall@colostate.edu</a> or <a href="mailto:jacob.royer@colostate.edu">jacob.royer@rams.colostate.edu</a>
+            <br/>This site is part of a CSU <a href='https://www.cs.colostate.edu/~ct310/yr2018sp/index.php'>CT 310</a> Course Project.
           </p>
-          Logged in as:
-          <?php
-          $usr = Auth::get('username');
-          echo $usr;
-          if($usr != 'guest') {
-              $time = Auth::get('updated_at');
-              echo " | Logged in since: " . date('D M j h:i:s a',$time);
-          }
-          ?>
-          | This site is part of a CSU <a href='https://www.cs.colostate.edu/~ct310/yr2018sp/index.php'>CT 310</a> Course Project.
         </center>
       </div>
   </footer>
