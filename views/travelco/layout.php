@@ -30,8 +30,10 @@
             <li <?=checkIfActive("attractions"); ?> ><a href="<?=Uri::Create("index.php/travelco/attractions"); ?>">Attractions</a></li>
             <?php
               if(Auth::check()){
-                if(Auth::get('group') === '100'){
-                  echo "<li " . checkIfActive("add_attraction") . " ><a href=" . Uri::create("index.php/travelco/add_attraction/") . ">+ Add Attraction</a></li>";
+                if(Auth::get('group') === '10'){
+                  echo "<li ";
+                  echo checkIfActive("add_attraction");
+                  echo "><a href=" . Uri::create("index.php/travelco/add_attraction/") . ">+ Add New Attraction</a></li>";
                 }
               }
             ?>
@@ -41,11 +43,11 @@
                   echo "<li><a href=" . Uri::create("index.php/travelco/logout/") . ">Logout</a></li>";
                   echo "<li ";
                   echo checkIfActive("account");
-                  echo " ><a href=" . Uri::create("index.php/travelco/account/") . ">My Account</a></li>";
+                  echo "><a href=" . Uri::create("index.php/travelco/account/") . ">My Account</a></li>";
               } else {
                   echo "<li ";
                   echo checkIfActive("login");
-                  echo " ><a href=" . Uri::create("index.php/travelco/login/") . ">Login</a></li>";
+                  echo "><a href=" . Uri::create("index.php/travelco/login/") . ">Login</a></li>";
               }
             ?>
           </ul>

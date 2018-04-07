@@ -8,7 +8,7 @@
       echo "<div id=\"loginMsg\" class=\"red\">Login failed. Please try again!<br/>Time: " . $datetime . "</div>";
   } else if ($auth_success === true) {
       echo "<div id=\"loginMsg\">Login successful. Welcome, " . Auth::get('username') . "!";
-      /*echo "<br/> Current time: "  . $datetime;*/
+      echo " Logged in at: "  . $datetime;
       echo "<br/> Last login at: " . date('D M j h:i:s a', Auth::get('last_login')) . "</div>";
       Auth::update_user(array('current_login' => $datetime));
   }
