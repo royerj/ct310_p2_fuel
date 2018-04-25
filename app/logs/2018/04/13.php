@@ -11,3 +11,15 @@ ERROR - 2018-04-13 10:27:40 --> Fatal Error - Class 'Auth' not found in /s/bach/
 ERROR - 2018-04-13 10:34:05 --> Fatal Error - Class 'Orm\Model' not found in /s/bach/d/under/royerj/fuel/app/classes/model/ormattraction.php on line 6
 ERROR - 2018-04-13 10:34:08 --> Fatal Error - Class 'Orm\Model' not found in /s/bach/d/under/royerj/fuel/app/classes/model/ormattraction.php on line 6
 ERROR - 2018-04-13 10:34:12 --> Fatal Error - Class 'Orm\Model' not found in /s/bach/d/under/royerj/fuel/app/classes/model/ormattraction.php on line 6
+ERROR - 2018-04-13 11:00:38 --> Fatal Error - Class 'Orm\Model' not found in /s/bach/d/under/royerj/fuel/app/classes/model/ormattraction.php on line 6
+ERROR - 2018-04-13 11:13:09 --> Fatal Error - Class 'Orm\Model' not found in /s/bach/d/under/royerj/fuel/app/classes/model/ormattraction.php on line 6
+ERROR - 2018-04-13 11:14:08 --> Fatal Error - Class 'Orm\Model' not found in /s/bach/d/under/royerj/fuel/app/classes/model/ormattraction.php on line 6
+ERROR - 2018-04-13 11:17:56 --> Fatal Error - Class 'Orm\Model' not found in /s/bach/d/under/royerj/fuel/app/classes/model/ormattraction.php on line 6
+ERROR - 2018-04-13 11:53:15 --> Parsing Error - syntax error, unexpected ':' in /s/bach/d/under/royerj/fuel/app/classes/controller/federation.php on line 10
+ERROR - 2018-04-13 11:53:37 --> Parsing Error - syntax error, unexpected '}' in /s/bach/d/under/royerj/fuel/app/classes/controller/federation.php on line 11
+ERROR - 2018-04-13 11:54:02 --> Parsing Error - syntax error, unexpected '}' in /s/bach/d/under/royerj/fuel/app/classes/controller/federation.php on line 11
+ERROR - 2018-04-13 11:55:38 --> Parsing Error - syntax error, unexpected '{' in /s/bach/d/under/royerj/fuel/app/classes/controller/federation.php on line 10
+ERROR - 2018-04-13 11:55:49 --> Parsing Error - syntax error, unexpected ':' in /s/bach/d/under/royerj/fuel/app/classes/controller/federation.php on line 10
+ERROR - 2018-04-13 11:55:55 --> Parsing Error - syntax error, unexpected ':' in /s/bach/d/under/royerj/fuel/app/classes/controller/federation.php on line 10
+ERROR - 2018-04-13 11:57:15 --> Parsing Error - syntax error, unexpected '{' in /s/bach/d/under/royerj/fuel/app/classes/controller/federation.php on line 10
+ERROR - 2018-04-13 12:01:03 --> Parsing Error - syntax error, unexpected ')' in /s/bach/d/under/royerj/fuel/app/classes/controller/federation.php on line 12
